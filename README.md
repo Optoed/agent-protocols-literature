@@ -26,7 +26,7 @@
 
 7. **[AgentSquare](pdf/agentsquare.pdf)** — ICLR 2025 main. Ищет модульную архитектуру агента через рекомбинацию и эволюцию компонентов. Прогноз качества получает от LLM по примерам оценённых систем в контексте; область поиска шире межагентной коммуникации. [Текст](md/agentsquare.md) · [Публикация](https://proceedings.iclr.cc/paper_files/paper/2025/hash/0ae94013da7cd459402fd77874e09ee3-Abstract-Conference.html) · [Репозиторий](https://github.com/tsinghua-fib-lab/AgentSquare)
 
-8. **[Cognify](pdf/cognify.pdf)** — KDD 2025 research. Оптимизирует структуру и параметры GenAI-схем с помощью AdaSeek: иерархического TPE и адаптивного распределения внутреннего бюджета. [Текст](md/cognify.md) · [Публикация](https://doi.org/10.1145/3711896.3736884) · [Репозиторий](https://github.com/GenseeAI/cognify)
+8. **[Cognify](pdf/cognify.pdf)** — KDD 2025 research. Оптимизирует структуру и параметры GenAI-схем с помощью AdaSeek: иерархического TPE и адаптивного распределения внутреннего бюджета. [Текст](md/cognify.md) · [Публикация](https://doi.org/10.1145/3711896.3736884) · [Препринт](https://arxiv.org/abs/2502.08056) · [Репозиторий](https://github.com/GenseeAI/cognify)
 
 9. **[AutoPDL](pdf/autopdl.pdf)** — AutoML 2025. Применяет последовательное отсеивание (successive halving) к декларативным конфигурациям промптов: шаблонам, инструкциям и демонстрациям. Не выполняет свободную генерацию межагентных графов. [Текст](md/autopdl.md) · [Публикация](https://proceedings.mlr.press/v293/spiess25a.html) · [Репозиторий](https://github.com/IBM/prompt-declaration-language)
 
@@ -34,29 +34,29 @@
 
 11. **[G-Designer](pdf/gdesigner.pdf)** — ICML 2025 main. Строит коммуникационный граф из представлений задачи и агентов с помощью вариационного графового кодировщика и декодера, затем прореживает связи. [Текст](md/gdesigner.md) · [Публикация](https://proceedings.mlr.press/v267/zhang25cu.html) · [Репозиторий](https://github.com/yanweiyue/GDesigner)
 
-12. **[MAS-GPT](pdf/masgpt.pdf)** — ICML 2025 main. Дообучает генератор на парах «запрос–агентная система», чтобы получать исполнимый MAS-код за один вызов. Один вызов генерации не учитывает подготовку данных, обучение и исполнение созданной системы. [Текст](md/masgpt.md) · [Публикация](https://proceedings.mlr.press/v267/ye25g.html) · [Репозиторий](https://github.com/rui-ye/MAS-GPT)
+12. **[MAS-GPT](pdf/masgpt.pdf)** — ICML 2025 main. Дообучает генератор на парах «запрос–агентная система», чтобы получать исполнимый MAS-код за один вызов. Один вызов генерации не учитывает подготовку данных, обучение и исполнение созданной системы. [Текст](md/masgpt.md) · [Публикация](https://proceedings.mlr.press/v267/ye25g.html) · [Репозиторий](https://github.com/MASWorks/MAS-GPT)
 
 13. **[AgentPrune](pdf/agentprune.pdf)** — ICLR 2025. Обучает пространственные и временные маски рёбер, затем однократно прореживает коммуникационный граф. Сокращает существующие связи, а не выбирает следующего агента по текущим ответам. [Текст](md/agentprune.md) · [Публикация](https://proceedings.iclr.cc/paper_files/paper/2025/hash/bbc461518c59a2a8d64e70e2c38c4a0e-Abstract-Conference.html) · [Репозиторий](https://github.com/yanweiyue/AgentPrune)
 
 14. **[SwarmAgentic](pdf/swarmagentic.pdf)** — EMNLP 2025 main. Совместно оптимизирует функции агентов и их взаимодействие через PSO-подобные обновления популяции с учётом индивидуальных и общих лучших результатов. [Текст](md/swarmagentic.md) · [Публикация](https://aclanthology.org/2025.emnlp-main.93/) · [Репозиторий](https://github.com/YaoZ720/SwarmAgenticCode)
 
-15. **[AgentSwift](pdf/agentswift.pdf)** — AAAI 2026 technical track. Использует иерархический поиск с отдельной обучаемой моделью предсказания качества, направляющей выбор перспективных агентных систем. [Текст](md/agentswift.md) · [Публикация](https://ojs.aaai.org/index.php/AAAI/article/view/40453) · [Страница проекта](https://github.com/Ericccc02/AgentSwift)
+15. **[AgentSwift](pdf/agentswift.pdf)** — AAAI 2026 technical track. Использует иерархический поиск с отдельной обучаемой моделью предсказания качества, направляющей выбор перспективных агентных систем. [Текст](md/agentswift.md) · [Публикация](https://ojs.aaai.org/index.php/AAAI/article/view/40453) · [Препринт](https://arxiv.org/abs/2506.06017v2) · [Страница проекта](https://github.com/Ericccc02/AgentSwift)
 
-16. **[A²Flow](pdf/a2flow.pdf)** — AAAI 2026 technical track. Извлекает операторы из примеров, кластеризует, обобщает и сохраняет их для построения схем. Меняет пространство операторов, а не только правило поиска. [Текст](md/a2flow.md) · [Публикация](https://ojs.aaai.org/index.php/AAAI/article/view/40240) · [Страница проекта](https://github.com/pandawei-ele/A2FLOW)
+16. **[A²Flow](pdf/a2flow.pdf)** — AAAI 2026 technical track. Извлекает операторы из примеров, кластеризует, обобщает и сохраняет их для построения схем. Меняет пространство операторов, а не только правило поиска. [Текст](md/a2flow.md) · [Публикация](https://ojs.aaai.org/index.php/AAAI/article/view/40240) · [Препринт](https://arxiv.org/abs/2511.20693v1) · [Страница проекта](https://github.com/pandawei-ele/A2FLOW)
 
 17. **[BayesFlow](pdf/bayesflow.pdf)** — Findings EACL 2026. Вероятностно строит частичные схемы, оценивая их продолжения; полная система включает дополнительный модуль улучшения кандидатов. Теоретический результат относится к процедуре без этого модуля. [Текст](md/bayesflow.md) · [Публикация](https://aclanthology.org/2026.findings-eacl.165/)
 
 18. **[Grammar Search](pdf/grammar.pdf)** — ACL 2026 main. Строит допустимые композиции компонентов по контекстно-свободной грамматике без LLM-генерации кода, принудительно включая редко выбранные компоненты. В настройке авторов MCTS и Thompson sampling не дали выигрыша. [Текст](md/grammar.md) · [Публикация](https://aclanthology.org/2026.acl-long.75/) · [Репозиторий](https://github.com/mayanks43/grammar_search)
 
-19. **[CARD](pdf/card.pdf)** — ICLR 2026 main. Генерирует коммуникационный граф с учётом свойств агентов и условий среды; заявляет повторную перестройку при изменении условий. Эксперименты в разных средах не равнозначны проверке восстановления после каждого сбоя внутри задачи. [Текст](md/card.md) · [Публикация](https://openreview.net/forum?id=JgvJdICc6P) · [Репозиторий](https://github.com/Warma10032/CARD)
+19. **[CARD](pdf/card.pdf)** — ICLR 2026 main. Генерирует коммуникационный граф с учётом свойств агентов и условий среды; заявляет повторную перестройку при изменении условий. Эксперименты в разных средах не равнозначны проверке восстановления после каждого сбоя внутри задачи. [Текст](md/card.md) · [Публикация](https://openreview.net/forum?id=JgvJdICc6P) · [Препринт](https://arxiv.org/abs/2603.01089v1) · [Репозиторий](https://github.com/ZeroTang05/CARD)
 
 ## C. Изменение взаимодействия во время исполнения
 
-20. **[DyLAN](pdf/dylan.pdf)** — COLM 2024 main. Ранжирует промежуточные ответы, отбирает активных агентов следующего раунда и останавливает обсуждение по согласованности. Также включает предварительную оптимизацию команды. [Текст](md/dylan.md) · [Публикация](https://openreview.net/forum?id=XII0Wp1XA9) · [Репозиторий](https://github.com/SALT-NLP/DyLAN)
+20. **[DyLAN](pdf/dylan.pdf)** — COLM 2024 main. Ранжирует промежуточные ответы, отбирает активных агентов следующего раунда и останавливает обсуждение по согласованности. Также включает предварительную оптимизацию команды. [Текст](md/dylan.md) · [Публикация](https://openreview.net/forum?id=XII0Wp1XA9) · [Препринт](https://arxiv.org/abs/2310.02170v2) · [Репозиторий](https://github.com/SALT-NLP/DyLAN)
 
 21. **[Puppeteer](pdf/puppeteer.pdf)** — NeurIPS 2025 main. Обучает централизованную политику выбирать следующего агента и завершение по текущему состоянию задачи, учитывая качество и стоимость траектории. [Текст](md/puppeteer.md) · [Публикация](https://proceedings.neurips.cc/paper_files/paper/2025/hash/f1320d2e2842169c6fc89dcbd80e94d0-Abstract-Conference.html) · [Репозиторий](https://github.com/OpenBMB/ChatDev/tree/puppeteer)
 
-22. **[SupervisorAgent](pdf/supervisor.pdf)** — ICLR 2026 main. Фильтр риска без LLM-вызовов определяет, когда нужен контроллер: разрешить продолжение, дать указание, исправить наблюдение или вызвать проверку. В оценке на GAIA экономия токенов сопровождается ростом задержки. [Текст](md/supervisor.md) · [Публикация](https://openreview.net/forum?id=pzFhtpkabh) · [Репозиторий](https://github.com/LINs-lab/SupervisorAgent)
+22. **[SupervisorAgent](pdf/supervisor.pdf)** — ICLR 2026 main. Фильтр риска без LLM-вызовов определяет, когда нужен контроллер: разрешить продолжение, дать указание, исправить наблюдение или вызвать проверку. В оценке на GAIA экономия токенов сопровождается ростом задержки. [Текст](md/supervisor.md) · [Публикация](https://openreview.net/forum?id=pzFhtpkabh) · [Препринт](https://arxiv.org/abs/2510.26585v2) · [Репозиторий](https://github.com/LINs-lab/SupervisorAgent)
 
 ## Дополнение: малые модели и оптимизация обвязки
 
@@ -68,7 +68,7 @@
 
 25. **[Scaling agent systems](pdf/scaling_agents.pdf)** — Nature Machine Intelligence 2026; сохранён arXiv v3. Сопоставляет одиночную и четыре многоагентные архитектуры на шести бенчмарках. Польза взаимодействия зависит от задачи и качества одиночного решения. Ссылка ведёт к журнальной версии с уточнёнными ограничениями; сохранённый PDF является препринтом с другим заголовком. [Текст](md/scaling_agents.md) · [Публикация](https://www.nature.com/articles/s42256-026-01268-y)
 
-26. **[Static and dynamic decomposition](pdf/decomposition.pdf)** — WOA 2026, CEUR-WS Vol. 4307. Различает заранее заданную и динамическую декомпозицию задачи для малых специализированных моделей. Это концептуальная схема проектирования; контролируемые эксперименты в статье не представлены. [Текст](md/decomposition.md) · [Публикация](https://ceur-ws.org/Vol-4307/)
+26. **[Static and dynamic decomposition](pdf/decomposition.pdf)** — WOA 2026, CEUR-WS Vol. 4307. Различает заранее заданную и динамическую декомпозицию задачи для малых специализированных моделей. Это концептуальная схема проектирования; контролируемые эксперименты в статье не представлены. [Текст](md/decomposition.md) · [Публикация](https://ceur-ws.org/Vol-4307/paper31.pdf)
 
 27. **[AutoSaddler](pdf/autosaddler.pdf)** — arXiv 2026, v1. Изменяет обвязку по трассам неудачных запусков: диагностика, структурированные патчи и проверка кандидатов. В статье оценка проведена на GAIA2, SWE-Bench Pro и Terminal-Bench 2.0. Это оптимизация кода, промптов и управляющей логики вокруг модели. [Текст](md/autosaddler.md) · [Публикация](https://arxiv.org/abs/2608.23041v1) · [Репозиторий](https://github.com/microsoft/AutoSaddler)
 

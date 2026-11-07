@@ -4,7 +4,7 @@
 
 Извлечённый текст; формулы и таблицы следует сверять с PDF.
 
-```text
+````text
 PAGE 1
 Accepted at ICLR 2026 (Oral).
 GEPA: REFLECTIVEPROMPTEVOLUTIONCANOUTPER-
@@ -6242,4 +6242,4 @@ IFBench 21 17
 Hover 92 50
 PUPA 46 38
 96
-```
+````
