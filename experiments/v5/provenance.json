@@ -1,0 +1,49 @@
+{
+  "verified_on": "2026-11-07",
+  "experiment_commit": "b0bcaea169794e0feb04918ebcb59934dda9e914",
+  "recovery_handler_commit": "528dcad4",
+  "chain": [
+    "main-v5-confirmed",
+    "main-v5-confirmed-recovery1",
+    "main-v5-confirmed-recovery2"
+  ],
+  "records_sha256": "dcd68f7fd4ad59cfdec6b8aed425ac41ce4a53de52b3fac17998ce6ebfee6586",
+  "plan_sha256": "5f958ab1af1e89c57cf5ef7331992fa9a0b3518555fefeee4bdbd914c15592d3",
+  "record_files": 4743,
+  "source_files": {
+    "confirmed.py": {
+      "original_path": "benchmarks/workflow_search/confirmed.py",
+      "sha256": "a40b14372220362f2d9216c2fc4d73a4ed9191f05ea12a6fad7f1135953a6e27"
+    },
+    "shared_roots.py": {
+      "original_path": "benchmarks/workflow_search/shared_roots.py",
+      "sha256": "6bd95c4a9fffff413dbf07f3e537ba9adbe21b02016ae4cfcf90a590b480d635"
+    },
+    "answers.py": {
+      "original_path": "benchmarks/workflow_search/answers.py",
+      "sha256": "8762b9a35348b1d06e2011ff298bc055d7102592463c1730656ff320efdf5eed"
+    },
+    "answers_v2.py": {
+      "original_path": "benchmarks/workflow_search/answers_v2.py",
+      "sha256": "5c6e3955e9f2b4e10c15f78a3267e65cf355b8a99d474412317210347e75b826"
+    },
+    "journal.py": {
+      "original_path": "benchmarks/workflow_search/journal.py",
+      "sha256": "dda28d164bbd31d5ba79566d7ec05d0c95e0df2e28cceb702df5a1797d365bda"
+    },
+    "workflow.py": {
+      "original_path": "packages/fedotmas-meta/src/fedotmas_meta/workflow.py",
+      "sha256": "a240e979721ea38778de4ab85f1a20f3ff8f012509155f2582396fde128ec546"
+    }
+  },
+  "publication_edits": [
+    {
+      "file": "result.json",
+      "field": "recovered_from",
+      "change": "Absolute local path replaced with run name; numerical results unchanged.",
+      "original_sha256": "5f9a162402b61bc64d5e0becd8ac659edf7de767bd09d25941817169a8b2265a"
+    }
+  ],
+  "omitted": "recovery.json (machine/process metadata and inheritance map); source dataset snapshots and previous experiment plans remain local. Their hashes and local audit outcome are recorded in plan.json, protocol.json and audit.json.",
+  "scope": "The public verifier checks included records, scoring, selection, timing and accounting. Full engine replay and original dataset sampling were additionally verified locally; the six source files are reference excerpts, not a standalone distribution of FEDOT.Swarm."
+}

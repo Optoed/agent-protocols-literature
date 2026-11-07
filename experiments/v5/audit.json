@@ -1,0 +1,1135 @@
+{
+  "full_local_audit": {
+    "audit_date": "2026-11-07",
+    "status": "pass",
+    "checks": {
+      "plan_hash": {
+        "pass": true,
+        "detail": null
+      },
+      "frozen_source_hashes": {
+        "pass": true,
+        "detail": 23
+      },
+      "dataset_snapshot_hashes": {
+        "pass": true,
+        "detail": 53
+      },
+      "previous_plan_hashes": {
+        "pass": true,
+        "detail": null
+      },
+      "deterministic_task_selection": {
+        "pass": true,
+        "detail": null
+      },
+      "disjoint_questions": {
+        "pass": true,
+        "detail": {
+          "search": 24,
+          "confirmation": 8,
+          "test": 48
+        }
+      },
+      "unique_tasks": {
+        "pass": true,
+        "detail": null
+      },
+      "record_identity_hash_and_cost": {
+        "pass": true,
+        "detail": []
+      },
+      "unique_response_ids": {
+        "pass": true,
+        "detail": 3312
+      },
+      "all_current_completed": {
+        "pass": true,
+        "detail": null
+      },
+      "request_parameters": {
+        "pass": true,
+        "detail": null
+      },
+      "response_model_metadata": {
+        "pass": true,
+        "detail": {
+          "providers": {
+            "OpenAI": 3290,
+            "Azure": 22
+          },
+          "note": "Provider was not pinned. Initial audit assumption that every response was served by OpenAI was false; Azure served 22 responses."
+        }
+      },
+      "cost_recalculation": {
+        "pass": true,
+        "detail": {
+          "independent_search": {
+            "calls": 1545,
+            "known_usd": 0.8510499999999986,
+            "unknown_cost_calls": 9,
+            "prompt_tokens": 1794928,
+            "completion_tokens": 1678893,
+            "unknown_usage_calls": 9
+          },
+          "shared_search": {
+            "calls": 795,
+            "known_usd": 0.43425331999999983,
+            "unknown_cost_calls": 3,
+            "prompt_tokens": 1309794,
+            "completion_tokens": 774052,
+            "unknown_usage_calls": 3
+          },
+          "confirmation_search": {
+            "calls": 264,
+            "known_usd": 0.14662059999999985,
+            "unknown_cost_calls": 0,
+            "prompt_tokens": 307714,
+            "completion_tokens": 289623,
+            "unknown_usage_calls": 0
+          },
+          "test_execution": {
+            "calls": 721,
+            "known_usd": 0.47235,
+            "unknown_cost_calls": 1,
+            "prompt_tokens": 989576,
+            "completion_tokens": 934081,
+            "unknown_usage_calls": 1
+          }
+        }
+      },
+      "plan_precedes_all_calls": {
+        "pass": true,
+        "detail": null
+      },
+      "inheritance_manifests": {
+        "pass": true,
+        "detail": [
+          {
+            "run": "main-v5-confirmed-recovery1",
+            "matched_current": 424,
+            "matched_historical": 5,
+            "missing": []
+          },
+          {
+            "run": "main-v5-confirmed-recovery2",
+            "matched_current": 700,
+            "matched_historical": 3,
+            "missing": []
+          }
+        ]
+      },
+      "offline_replay_no_errors": {
+        "pass": true,
+        "detail": []
+      },
+      "offline_replay_all_records_once": {
+        "pass": true,
+        "detail": {
+          "used": 3312,
+          "recorded": 3312
+        }
+      },
+      "offline_replay_replicates_equal": {
+        "pass": true,
+        "detail": null
+      },
+      "all_evaluations_match_replay": {
+        "pass": true,
+        "detail": {
+          "count": 1400,
+          "mismatches": []
+        }
+      },
+      "test_rescoring": {
+        "pass": true,
+        "detail": []
+      }
+    },
+    "failures": [],
+    "statuses": {
+      "calls:completed": 3312,
+      "interrupted_attempts/calls:unsettled": 8,
+      "interrupted_attempts/calls:pending": 5
+    },
+    "costs": {
+      "independent_search": {
+        "calls": 1545,
+        "known_usd": 0.8510499999999986,
+        "unknown_cost_calls": 9,
+        "prompt_tokens": 1794928,
+        "completion_tokens": 1678893,
+        "unknown_usage_calls": 9
+      },
+      "shared_search": {
+        "calls": 795,
+        "known_usd": 0.43425331999999983,
+        "unknown_cost_calls": 3,
+        "prompt_tokens": 1309794,
+        "completion_tokens": 774052,
+        "unknown_usage_calls": 3
+      },
+      "confirmation_search": {
+        "calls": 264,
+        "known_usd": 0.14662059999999985,
+        "unknown_cost_calls": 0,
+        "prompt_tokens": 307714,
+        "completion_tokens": 289623,
+        "unknown_usage_calls": 0
+      },
+      "test_execution": {
+        "calls": 721,
+        "known_usd": 0.47235,
+        "unknown_cost_calls": 1,
+        "prompt_tokens": 989576,
+        "completion_tokens": 934081,
+        "unknown_usage_calls": 1
+      }
+    },
+    "known_total": 1.9042739199999983,
+    "unknown_attempts": 13,
+    "accuracies": {
+      "independent": 0.7430555555555556,
+      "shared": 0.7777777777777778,
+      "shared_confirm": 0.7916666666666666
+    },
+    "known_search_saving": 0.3174620527583566,
+    "replicates": [
+      {
+        "replicate": 0,
+        "winners": {
+          "independent": "fa356c9f7c132ad7d98ee95440d294ab6334a2d6eb23c6286692312a806c4d27",
+          "shared": "338c8247c410014f0e91bea66a4125a1b2ac21a6c8e4798177a0d2b80a9da828",
+          "shared_confirm": "9b598989f840ba223faaeb53323f5026c5c1291eb7cd0003c5b4bab43bbf87c7"
+        },
+        "test": {
+          "independent": {
+            "workflow": "fa356c9f7c132ad7d98ee95440d294ab6334a2d6eb23c6286692312a806c4d27",
+            "correct": 35.0,
+            "count": 48,
+            "quality": 0.7291666666666666,
+            "by_domain": {
+              "algebra": {
+                "correct": 19.0,
+                "count": 24
+              },
+              "intermediate_algebra": {
+                "correct": 16.0,
+                "count": 24
+              }
+            }
+          },
+          "shared": {
+            "workflow": "338c8247c410014f0e91bea66a4125a1b2ac21a6c8e4798177a0d2b80a9da828",
+            "correct": 37.0,
+            "count": 48,
+            "quality": 0.7708333333333334,
+            "by_domain": {
+              "algebra": {
+                "correct": 19.0,
+                "count": 24
+              },
+              "intermediate_algebra": {
+                "correct": 18.0,
+                "count": 24
+              }
+            }
+          },
+          "shared_confirm": {
+            "workflow": "9b598989f840ba223faaeb53323f5026c5c1291eb7cd0003c5b4bab43bbf87c7",
+            "correct": 39.0,
+            "count": 48,
+            "quality": 0.8125,
+            "by_domain": {
+              "algebra": {
+                "correct": 20.0,
+                "count": 24
+              },
+              "intermediate_algebra": {
+                "correct": 19.0,
+                "count": 24
+              }
+            }
+          }
+        }
+      },
+      {
+        "replicate": 1,
+        "winners": {
+          "independent": "c3c1c7b3b1e43ad902ee768abdcdee20ba8ce42c90b899553a70e3f4902ddac4",
+          "shared": "c3c1c7b3b1e43ad902ee768abdcdee20ba8ce42c90b899553a70e3f4902ddac4",
+          "shared_confirm": "c3c1c7b3b1e43ad902ee768abdcdee20ba8ce42c90b899553a70e3f4902ddac4"
+        },
+        "test": {
+          "independent": {
+            "workflow": "c3c1c7b3b1e43ad902ee768abdcdee20ba8ce42c90b899553a70e3f4902ddac4",
+            "correct": 36.0,
+            "count": 48,
+            "quality": 0.75,
+            "by_domain": {
+              "algebra": {
+                "correct": 20.0,
+                "count": 24
+              },
+              "intermediate_algebra": {
+                "correct": 16.0,
+                "count": 24
+              }
+            }
+          },
+          "shared": {
+            "workflow": "c3c1c7b3b1e43ad902ee768abdcdee20ba8ce42c90b899553a70e3f4902ddac4",
+            "correct": 36.0,
+            "count": 48,
+            "quality": 0.75,
+            "by_domain": {
+              "algebra": {
+                "correct": 20.0,
+                "count": 24
+              },
+              "intermediate_algebra": {
+                "correct": 16.0,
+                "count": 24
+              }
+            }
+          },
+          "shared_confirm": {
+            "workflow": "c3c1c7b3b1e43ad902ee768abdcdee20ba8ce42c90b899553a70e3f4902ddac4",
+            "correct": 36.0,
+            "count": 48,
+            "quality": 0.75,
+            "by_domain": {
+              "algebra": {
+                "correct": 20.0,
+                "count": 24
+              },
+              "intermediate_algebra": {
+                "correct": 16.0,
+                "count": 24
+              }
+            }
+          }
+        }
+      },
+      {
+        "replicate": 2,
+        "winners": {
+          "independent": "d347c248f31b25d0268216a56a6fe4d12ce9db38e69ce46f1dc390326c507528",
+          "shared": "c3c1c7b3b1e43ad902ee768abdcdee20ba8ce42c90b899553a70e3f4902ddac4",
+          "shared_confirm": "c3c1c7b3b1e43ad902ee768abdcdee20ba8ce42c90b899553a70e3f4902ddac4"
+        },
+        "test": {
+          "independent": {
+            "workflow": "d347c248f31b25d0268216a56a6fe4d12ce9db38e69ce46f1dc390326c507528",
+            "correct": 36.0,
+            "count": 48,
+            "quality": 0.75,
+            "by_domain": {
+              "algebra": {
+                "correct": 20.0,
+                "count": 24
+              },
+              "intermediate_algebra": {
+                "correct": 16.0,
+                "count": 24
+              }
+            }
+          },
+          "shared": {
+            "workflow": "c3c1c7b3b1e43ad902ee768abdcdee20ba8ce42c90b899553a70e3f4902ddac4",
+            "correct": 39.0,
+            "count": 48,
+            "quality": 0.8125,
+            "by_domain": {
+              "algebra": {
+                "correct": 21.0,
+                "count": 24
+              },
+              "intermediate_algebra": {
+                "correct": 18.0,
+                "count": 24
+              }
+            }
+          },
+          "shared_confirm": {
+            "workflow": "c3c1c7b3b1e43ad902ee768abdcdee20ba8ce42c90b899553a70e3f4902ddac4",
+            "correct": 39.0,
+            "count": 48,
+            "quality": 0.8125,
+            "by_domain": {
+              "algebra": {
+                "correct": 21.0,
+                "count": 24
+              },
+              "intermediate_algebra": {
+                "correct": 18.0,
+                "count": 24
+              }
+            }
+          }
+        }
+      }
+    ],
+    "exploratory_uncertainty": {
+      "mean_delta": 0.04861111111111111,
+      "task_cluster_bootstrap95_conditional_exploratory": [
+        -3.469446951953614e-18,
+        0.10416666666666667
+      ],
+      "positive_task_clusters": 8,
+      "negative_task_clusters": 3,
+      "tied_task_clusters": 37,
+      "caveat": "Resamples 48 test tasks with all three repeat outcomes together; conditional on observed selected workflows; does not capture new search runs/model/domain variation."
+    },
+    "evidence_scope": "Local request/response provenance and exact offline replay, not a provider-side billing attestation. No network or model calls made."
+  },
+  "independent_scoring": {
+    "independent_arithmetic_positive_false_matches": [],
+    "broader_parser_extra_matches": [],
+    "evaluation_count": 1400,
+    "quality_counts": {
+      "correct": 1182,
+      "incorrect": 218
+    },
+    "search_test_order": [
+      {
+        "replicate": 0,
+        "last_search_end": "2026-10-06T18:09:32.563870+00:00",
+        "first_test_start": "2026-10-06T18:09:32.573696+00:00",
+        "search_before_test": true
+      },
+      {
+        "replicate": 1,
+        "last_search_end": "2026-10-06T18:06:49.078442+00:00",
+        "first_test_start": "2026-10-06T18:06:49.086597+00:00",
+        "search_before_test": true
+      },
+      {
+        "replicate": 2,
+        "last_search_end": "2026-10-06T17:53:03.188265+00:00",
+        "first_test_start": "2026-10-06T17:53:03.203651+00:00",
+        "search_before_test": true
+      }
+    ],
+    "strict_correct_out_of_144": {
+      "independent": 107.0,
+      "shared": 112.0,
+      "shared_confirm": 114.0
+    },
+    "note": "Independent bounded rational parser; broader supported syntax is diagnostic only. Official scorer/results unchanged."
+  },
+  "dataset_live_comparison": {
+    "date": "2026-11-07",
+    "pages": 36,
+    "tasks": 80,
+    "mismatches": 0,
+    "checks": [
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=algebra&split=train&offset=1200&length=100",
+        "checks": [
+          {
+            "id": "math-algebra-train-1211",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-algebra-train-1291",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "558321ed44f4c5a84f5fca8bea1a91e791c0a23f87d98598a53ec8bc316a72d0"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=intermediate_algebra&split=train&offset=1000&length=100",
+        "checks": [
+          {
+            "id": "math-intermediate_algebra-train-1095",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-intermediate_algebra-train-1085",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "0e9c5a8f91039356bc6a64e9d87d01b878226751da49243ac61eb8f5b3275dc4"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=algebra&split=train&offset=1600&length=100",
+        "checks": [
+          {
+            "id": "math-algebra-train-1635",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "a4f5b6d77ae12d0fcfafe0a5ab031b8f20ef70559c4ca2cb60e61afe416afdf9"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=intermediate_algebra&split=train&offset=200&length=100",
+        "checks": [
+          {
+            "id": "math-intermediate_algebra-train-211",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-intermediate_algebra-train-266",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "23a36dc14841d7d4cdc4beab34da97643e31b2473002bdcfe1923d7a1ac41de4"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=intermediate_algebra&split=train&offset=300&length=100",
+        "checks": [
+          {
+            "id": "math-intermediate_algebra-train-379",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-intermediate_algebra-train-389",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-intermediate_algebra-train-372",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "07dc8bece97253c81344b55316d54e0ca412b793c8c1371b8618578c70138d36"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=algebra&split=train&offset=800&length=100",
+        "checks": [
+          {
+            "id": "math-algebra-train-840",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "3a57f3ed277f9392ca389f2e9eb8c23a6bc83460093a9d3e0d87eded5196f886"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=intermediate_algebra&split=train&offset=0&length=100",
+        "checks": [
+          {
+            "id": "math-intermediate_algebra-train-37",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-intermediate_algebra-train-66",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "2cdcbf5ac8db259655c74c87f36dfb9c26cd5cdf055490056f7496511a077963"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=algebra&split=train&offset=600&length=100",
+        "checks": [
+          {
+            "id": "math-algebra-train-628",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-algebra-train-618",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "0622b4c5dac06b8951a8a82ae1f1c68a9e2515f09e264d470cc7900ce238a28b"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=intermediate_algebra&split=train&offset=100&length=100",
+        "checks": [
+          {
+            "id": "math-intermediate_algebra-train-153",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-intermediate_algebra-train-166",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-intermediate_algebra-train-107",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "b2b78385f8e924b535a24be7495cd5d3d65c5158ff34bd31f9dcfeaeb4ba10a0"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=algebra&split=train&offset=900&length=100",
+        "checks": [
+          {
+            "id": "math-algebra-train-992",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "2bb7e5f4e8c44c6feb0568200c789fa5399c13cdf7fa333326f2fd9429a0b980"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=intermediate_algebra&split=train&offset=1200&length=100",
+        "checks": [
+          {
+            "id": "math-intermediate_algebra-train-1241",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-intermediate_algebra-train-1288",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "f4658ebae49abdea5197eba619f4f7e55754c32f777a1abc237413c7c22cf0f1"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=algebra&split=train&offset=1100&length=100",
+        "checks": [
+          {
+            "id": "math-algebra-train-1106",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "59d99259a9bc17f7e13881f351fe08dae08b29a419b6b88567c32121af65b2f4"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=intermediate_algebra&split=train&offset=1100&length=100",
+        "checks": [
+          {
+            "id": "math-intermediate_algebra-train-1142",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "d25d58b69a4d9f480eb892a6da5dfc01e92a7db8d0a0aa7a5dd57b64515041aa"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=algebra&split=train&offset=0&length=100",
+        "checks": [
+          {
+            "id": "math-algebra-train-18",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "232cb29078beab97b4a3cd4de9cdf46a7aa920d196d55c9917867d3587158d46"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=intermediate_algebra&split=train&offset=500&length=100",
+        "checks": [
+          {
+            "id": "math-intermediate_algebra-train-502",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "aea2c50909aeb0335b9cea7076e9379da6864cebad0b697def6bd24cadba0e33"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=algebra&split=train&offset=500&length=100",
+        "checks": [
+          {
+            "id": "math-algebra-train-509",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "f365d2038bb64fab45c3fd44e9e553ba912589f5fbc0c2d0d311c62c313f15aa"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=algebra&split=train&offset=400&length=100",
+        "checks": [
+          {
+            "id": "math-algebra-train-454",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-algebra-train-483",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "8c924436664dfe46444354f9c53780881c9eb5ea6afbe9922053da75ffdbeef0"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=algebra&split=train&offset=1300&length=100",
+        "checks": [
+          {
+            "id": "math-algebra-train-1395",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-algebra-train-1333",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "fb72352a1a0e2be5bade3886984d77f68339a2a6cef710bdc7a59b9ab6c208bd"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=algebra&split=train&offset=100&length=100",
+        "checks": [
+          {
+            "id": "math-algebra-train-196",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "ebc9fa161a06fe34d230a52966a470245c937269b817b3e60026839c5f86747e"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=algebra&split=train&offset=1500&length=100",
+        "checks": [
+          {
+            "id": "math-algebra-train-1531",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "5bc1ab31f85d7813aaafb2e99a25d86a5b43eeacd78730afeb078495c9c49bfb"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=algebra&split=test&offset=800&length=100",
+        "checks": [
+          {
+            "id": "math-algebra-test-830",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-algebra-test-885",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-algebra-test-882",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-algebra-test-806",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-algebra-test-866",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-algebra-test-867",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "1e73670ba4be76aad327e0ecf5413668a7d1a8e651cbfe087cc28e82dcb1d32b"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=intermediate_algebra&split=test&offset=200&length=100",
+        "checks": [
+          {
+            "id": "math-intermediate_algebra-test-276",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-intermediate_algebra-test-248",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-intermediate_algebra-test-219",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "977c20e82407cdb9843d62806f38bc3fa1eaf572db8e1c54bee87a7bf6180900"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=algebra&split=test&offset=700&length=100",
+        "checks": [
+          {
+            "id": "math-algebra-test-740",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-algebra-test-778",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-algebra-test-770",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-algebra-test-725",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "13138a1e63113eaa976bf135b471f6b407b246589d7c716dc31ce1f5abd52261"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=intermediate_algebra&split=test&offset=100&length=100",
+        "checks": [
+          {
+            "id": "math-intermediate_algebra-test-191",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-intermediate_algebra-test-199",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-intermediate_algebra-test-130",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-intermediate_algebra-test-123",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "18a2d1f69d720fa6e146b4ac4284a43725c41733890708e92db90d3b5e00ebb3"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=intermediate_algebra&split=test&offset=600&length=100",
+        "checks": [
+          {
+            "id": "math-intermediate_algebra-test-697",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "a7e02526117fa6b061ac5d211d7d1d8c98f1ef6994d4b23889b82c9a42b05cd8"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=algebra&split=test&offset=900&length=100",
+        "checks": [
+          {
+            "id": "math-algebra-test-970",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-algebra-test-955",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "4332748b7f3014d450348621f314b87c18937dcc6bbed2875db5044f2fd8249f"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=intermediate_algebra&split=test&offset=400&length=100",
+        "checks": [
+          {
+            "id": "math-intermediate_algebra-test-432",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-intermediate_algebra-test-410",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-intermediate_algebra-test-463",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-intermediate_algebra-test-420",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-intermediate_algebra-test-481",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-intermediate_algebra-test-492",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-intermediate_algebra-test-483",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "890b504c90cf4ceebceb55d1a710bd243de9a81faf45076709f67c7730fd233d"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=algebra&split=test&offset=0&length=100",
+        "checks": [
+          {
+            "id": "math-algebra-test-91",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-algebra-test-75",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-algebra-test-15",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-algebra-test-57",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-algebra-test-11",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "dec46b81e1de70e0514672f412509407cfd1533acd286db948dc8a98bbc202cf"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=intermediate_algebra&split=test&offset=700&length=100",
+        "checks": [
+          {
+            "id": "math-intermediate_algebra-test-789",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-intermediate_algebra-test-758",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-intermediate_algebra-test-747",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "4715ba07f41c674274d4529889e85b3518bd24bd689016565329af2e91a73768"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=algebra&split=test&offset=1100&length=100",
+        "checks": [
+          {
+            "id": "math-algebra-test-1148",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-algebra-test-1153",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "17f5ddf87cae4c117d255872ae9b0d35fd60ee0ecb5e68835fabfcd89ea58244"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=intermediate_algebra&split=test&offset=300&length=100",
+        "checks": [
+          {
+            "id": "math-intermediate_algebra-test-348",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-intermediate_algebra-test-300",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-intermediate_algebra-test-349",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "7b2022a9320fbd0e3a73c0816c89990590f00f9c7593a74a559350b903ccb139"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=intermediate_algebra&split=test&offset=0&length=100",
+        "checks": [
+          {
+            "id": "math-intermediate_algebra-test-57",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "cebd2a9e90aa08c869c3657a13bc2811c7b76b8afa1d4a2d6cbed7fbf8b1510b"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=algebra&split=test&offset=600&length=100",
+        "checks": [
+          {
+            "id": "math-algebra-test-642",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-algebra-test-603",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "fbdf443cc9995a4028e5fbcd5ac862a6a2041240c57a3ea262a9c467cf2912dc"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=algebra&split=test&offset=1000&length=100",
+        "checks": [
+          {
+            "id": "math-algebra-test-1026",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "68dc29c39e8f3dc68524f9ceff282d3ab98f1270f666bd90a47fa8072c1e2a83"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=algebra&split=test&offset=200&length=100",
+        "checks": [
+          {
+            "id": "math-algebra-test-250",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-algebra-test-200",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "bd28ab5bca6c90786f615afb29763e33fbe32614034b762287e409a84f5d9563"
+      },
+      {
+        "url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fhendrycks_math&config=intermediate_algebra&split=test&offset=500&length=100",
+        "checks": [
+          {
+            "id": "math-intermediate_algebra-test-582",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          },
+          {
+            "id": "math-intermediate_algebra-test-574",
+            "question_equal": true,
+            "level_equal": true,
+            "reference_occurs_in_solution": true
+          }
+        ],
+        "sha256": "49b32dc8ff1311a61c4027ace7ce433c0b69db79d0a305189897a4de9c544643"
+      }
+    ]
+  },
+  "prior_v4_context": {
+    "source_sha256": "d9673c122b109319e8b511befa810f46657280919658f299d36250d457f8fcbd",
+    "source_run": "main-v4-overnight-recovery1",
+    "mean_test_accuracy": {
+      "independent": 0.7222222222222223,
+      "shared": 0.6805555555555557
+    },
+    "known_search_saving": 0.3428582207138188,
+    "note": "Previous experiment on different tasks and scorer; not pooled with V5. Raw V4 data is not included in this package."
+  }
+}

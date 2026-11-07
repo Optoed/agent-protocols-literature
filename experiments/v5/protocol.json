@@ -1,0 +1,29 @@
+{
+  "plan_sha256": "5f958ab1af1e89c57cf5ef7331992fa9a0b3518555fefeee4bdbd914c15592d3",
+  "source_hashes": {
+    "benchmarks\\workflow_search\\aflow_probe.py": "3cebd44124fba3d123082d634667bd6f11fc016e334fa215024820496c1a2750",
+    "benchmarks\\workflow_search\\answers.py": "8762b9a35348b1d06e2011ff298bc055d7102592463c1730656ff320efdf5eed",
+    "benchmarks\\workflow_search\\answers_v2.py": "5c6e3955e9f2b4e10c15f78a3267e65cf355b8a99d474412317210347e75b826",
+    "benchmarks\\workflow_search\\awake.py": "aea99772b6e21ef7c42d28030e2893b2d8921126192592663d83cbb00f200a5d",
+    "benchmarks\\workflow_search\\confirmed.py": "a40b14372220362f2d9216c2fc4d73a4ed9191f05ea12a6fad7f1135953a6e27",
+    "benchmarks\\workflow_search\\diagnose_paired.py": "5155989bef7651093d88616dae596875b9eaabfe340e0077588ce8abd3fd95f8",
+    "benchmarks\\workflow_search\\fetch_aflow.py": "5178c38781409e8af6588dbab27fd2cd042e6b6dadb259f66758dcb4e0330e8d",
+    "benchmarks\\workflow_search\\journal.py": "dda28d164bbd31d5ba79566d7ec05d0c95e0df2e28cceb702df5a1797d365bda",
+    "benchmarks\\workflow_search\\paired.py": "58e34390a15d30d1d1f005c4a5fdfd60bcdfaa6b73dd600ceeef18f82362a2dc",
+    "benchmarks\\workflow_search\\pilot.py": "e23397548e0100ead275483de72d9e73d1a0b9c2af3eb638b3b6ae3fd190b123",
+    "benchmarks\\workflow_search\\prepare.py": "8ac502291d3951244e6a19209257c184f2019d539fcb5954e2876db743867543",
+    "benchmarks\\workflow_search\\prepare_confirmed.py": "2b7d65f083f057f87db0d4d3960c8ea80c4f45b1c90124d59aee2a619a161e39",
+    "benchmarks\\workflow_search\\prepare_overnight.py": "292a827eaf5c41b8c1f0abd2dc4865589a1e043eb7e044573c738f652118777e",
+    "benchmarks\\workflow_search\\prepare_paired.py": "7f64a3d21802173aaa7c62842854e84f233920db5bc6185a1ec52ba1c2d3e198",
+    "benchmarks\\workflow_search\\record.py": "f9c6642b947f98b83d12fdb0fcb928fea274bf94c7e2cc9333be4d964e2aeb0b",
+    "benchmarks\\workflow_search\\recover.py": "ff0e5fbf8ddb3110674793099148e1a1b17bd7f129f126737a292b57d7edafcb",
+    "benchmarks\\workflow_search\\recover_paired.py": "796919fe2fd8225271d804bd954d9484c67c55a66b0ef3057d475aa777b38fb4",
+    "benchmarks\\workflow_search\\replay.py": "dcf138c53559a42f9c54a8d651261e770102ccde1517f575fdebc625e9c6abf6",
+    "benchmarks\\workflow_search\\run.py": "3052d8dc088021049a7830a95c8a6bbb3738c833a9063127ee22b843500e99ca",
+    "benchmarks\\workflow_search\\shared_roots.py": "6bd95c4a9fffff413dbf07f3e537ba9adbe21b02016ae4cfcf90a590b480d635",
+    "benchmarks\\workflow_search\\validate_bank.py": "afa77be80601da288c96f72b3dd8c1575089183105134407229ddd6c40a55086",
+    "benchmarks\\workflow_search\\__init__.py": "39fdba0e6829ae0ec488d9c0f5c9ae74ae9e56c237f78321a3131aa43d1e846e",
+    "packages\\fedotmas-meta\\src\\fedotmas_meta\\workflow.py": "a240e979721ea38778de4ab85f1a20f3ff8f012509155f2582396fde128ec546"
+  },
+  "transport_retries": 2
+}
