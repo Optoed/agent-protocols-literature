@@ -1,0 +1,39 @@
+{
+  "kind": "historical_offline_counterfactual_not_a_new_LLM_experiment",
+  "policy": "race8",
+  "replicates": [
+    {
+      "replicate": 0,
+      "winner_unchanged": true,
+      "winner": "9b598989f840ba223faaeb53323f5026c5c1291eb7cd0003c5b4bab43bbf87c7",
+      "consumed_workflow_tasks": 37,
+      "confirmation_calls": 95,
+      "known_confirmation_usd": 0.0531116,
+      "test_correct_unchanged": 39.0
+    },
+    {
+      "replicate": 1,
+      "winner_unchanged": true,
+      "winner": "c3c1c7b3b1e43ad902ee768abdcdee20ba8ce42c90b899553a70e3f4902ddac4",
+      "consumed_workflow_tasks": 38,
+      "confirmation_calls": 97,
+      "known_confirmation_usd": 0.0518247,
+      "test_correct_unchanged": 36.0
+    },
+    {
+      "replicate": 2,
+      "winner_unchanged": true,
+      "winner": "c3c1c7b3b1e43ad902ee768abdcdee20ba8ce42c90b899553a70e3f4902ddac4",
+      "consumed_workflow_tasks": 22,
+      "confirmation_calls": 48,
+      "known_confirmation_usd": 0.0261801,
+      "test_correct_unchanged": 39.0
+    }
+  ],
+  "baseline_known_search_usd": 0.5808739199999997,
+  "projected_known_search_usd": 0.5653697199999999,
+  "projected_saving_vs_v5": 0.026691162171646243,
+  "projected_saving_vs_full": 0.3356797837964858,
+  "new_api_calls": 0,
+  "limitations": "Uses historical V5 answer table, including previously seen test outcomes. Demonstrates accounting and equal winners for a fixed table, not fresh performance or measured runtime savings. Original 13 unknown attempts remain unresolved; they are not made free by this calculation."
+}

@@ -8,3 +8,4 @@
 experiments/v5/plan.json -text whitespace=cr-at-eol
 experiments/v5/protocol.json -text whitespace=cr-at-eol
 experiments/v5/source/*.py -text whitespace=cr-at-eol
+experiments/v6/plan.json -text whitespace=cr-at-eol

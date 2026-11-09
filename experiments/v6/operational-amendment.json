@@ -1,0 +1,18 @@
+{
+  "registered_on": "2026-11-09",
+  "completed_responses_before_amendment": 0,
+  "original_plan_sha256": "7c7ebf741c719203c962af12b73a7e9ba2e79a6bd0d882d1b498599972792bca",
+  "experiment_sources_unchanged": true,
+  "amendment": "Account-credit readiness check before restarting the zero-response credit-rejected launch. Preserve initial attempts as unknown startup overhead in the complete research bill. No task, hypothesis or scoring changes. No completed responses available when this rule was registered.",
+  "resume_source_sha256": "fab416292836b81138663df6a524d45689ca26a26db5ffa28d359cf6f9cdaf23",
+  "archives": {
+    "source.zip": {
+      "sha256": "e7a6d8c9f0b78eae863357d607d8adbf998a0dc53f82b329b4cc59853ad5354e",
+      "bytes": 3518377
+    },
+    "startup-records.zip": {
+      "sha256": "21d597fd8a6ff8d32e9233c7d4dffb115131582e01bfed70a2a912f103e713c9",
+      "bytes": 50609
+    }
+  }
+}
